@@ -2,8 +2,7 @@ A [Giter8][g8] template for ...!
 
 Template license
 ----------------
-Written in <YEAR> by <AUTHOR NAME> <AUTHOR E-MAIL ADDRESS>
-[other author/contributor lines as appropriate]
+Written in 2021 by Jakub Kozłowski <kubukoz@gmail.com>
 
 To the extent possible under law, the author(s) have dedicated all copyright and related
 and neighboring rights to this template to the public domain worldwide.

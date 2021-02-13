@@ -3,3 +3,5 @@ boot/
 lib_managed/
 src_managed/
 project/plugins/project/
+
+src/main/scala/ # workspace to copy from
