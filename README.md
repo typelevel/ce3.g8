@@ -1,4 +1,4 @@
-A [Giter8][g8] template for ...!
+A [Giter8][g8] template for [cats-effect 3](https://github.com/typelevel/cats-effect/tree/series/3.x)!
 
 Template license
 ----------------
