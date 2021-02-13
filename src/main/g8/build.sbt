@@ -5,6 +5,7 @@ lazy val root = (project in file(".")).settings(
   name := "ce3.g8",
   libraryDependencies ++= Seq(
     // "core" module - IO, IOApp, schedulers
+    // This pulls in the kernel and std modules automatically.
     "org.typelevel" %% "cats-effect" % "3.0.0-M5",
     // concurrency abstractions and primitives (Concurrent, Sync, Async etc.)
     "org.typelevel" %% "cats-effect-kernel" % "3.0.0-M5",
