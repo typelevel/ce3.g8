@@ -1,8 +1,8 @@
 ThisBuild / organization := "com.example"
-ThisBuild / scalaVersion := "2.13.4"
+ThisBuild / scalaVersion := "2.13.5"
 
 lazy val root = (project in file(".")).settings(
-  name := "ce3.g8",
+  name := "$name;format="norm"$",
   libraryDependencies ++= Seq(
     // "core" module - IO, IOApp, schedulers
     // This pulls in the kernel and std modules automatically.
