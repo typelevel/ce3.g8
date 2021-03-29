@@ -21,8 +21,8 @@ lazy val root = (project in file("."))
     )(Resolver.ivyStylePatterns),
     // These are duplicated here for Scala Steward
     libraryDependencies ++= Seq(
-      "org.typelevel" %% "cats-effect" % "3.0.0-RC3",
-      "org.typelevel" %% "cats-effect-kernel" % "3.0.0-RC3",
-      "org.typelevel" %% "cats-effect-std" % "3.0.0-RC3"
+      "org.typelevel" %% "cats-effect" % "3.0.0",
+      "org.typelevel" %% "cats-effect-kernel" % "3.0.0",
+      "org.typelevel" %% "cats-effect-std" % "3.0.0"
     )
   )
