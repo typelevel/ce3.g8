@@ -12,6 +12,8 @@ lazy val root = (project in file(".")).settings(
     // standard "effect" library (Queues, Console, Random etc.)
     "org.typelevel" %% "cats-effect-std" % "3.0.1"$if(scala3.truthy)$$else$,
     // better monadic for compiler plugin as suggested by documentation
-    compilerPlugin("com.olegpy" %% "better-monadic-for" % "0.3.1")$endif$
+    compilerPlugin("com.olegpy" %% "better-monadic-for" % "0.3.1")$endif$,
+    // testing library
+    "org.typelevel" %% "cats-effect-testing-specs2" % "1.0.0" % Test
   )
 )
