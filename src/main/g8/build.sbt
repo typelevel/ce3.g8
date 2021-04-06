@@ -19,9 +19,5 @@ lazy val root = (project in file(".")).settings(
     $endif$$if(testlib-use-munit-cats-effect-3.truthy)$,
     "org.typelevel" %% "munit-cats-effect-3" % "1.0.0" % Test$else$$endif$
 
-  )$if(testlib-use-munit-cats-effect-3.truthy)$,
-
-  // this is needed to make munit suites collectable by sbt
-  testFrameworks += new TestFramework("munit.Framework")$else$$endif$
-
+  )
 )
