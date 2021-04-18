@@ -6,6 +6,6 @@ import munit.CatsEffectSuite
 class HelloWorldSuite extends CatsEffectSuite {
 
   test("test hello world says hi") {
-    HelloWorld.say.map(it => assertEquals(it, "Hello Cats!"))
+    HelloWorld.say$if(scala3.truthy)$()$endif$.map(it => assertEquals(it, "Hello Cats!"))
   }
 }
