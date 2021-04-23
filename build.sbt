@@ -19,6 +19,8 @@ lazy val root = (project in file("."))
       "typesafe",
       url("https://repo.typesafe.com/typesafe/ivy-releases/")
     )(Resolver.ivyStylePatterns),
+    ThisBuild / githubWorkflowPublishTargetBranches := Seq(),
+    ThisBuild / githubWorkflowBuild := Seq(WorkflowStep.Sbt(List("g8Test"), name = Some("Testing template"))),
     // These are duplicated here for Scala Steward
     libraryDependencies ++= Seq(
       "org.typelevel" %% "cats-effect" % "3.0.2",
