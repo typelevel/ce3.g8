@@ -5,8 +5,8 @@ lazy val root = (project in file("."))
   .enablePlugins(ScriptedPlugin)
   .settings(
     name := "ce3.g8",
-    test in Test := {
-      val _ = (g8Test in Test).toTask("").value
+    Test / test := {
+      val _ = (Test / g8Test).toTask("").value
     },
     scriptedLaunchOpts ++= List(
       "-Xms1024m",
@@ -19,6 +19,8 @@ lazy val root = (project in file("."))
       "typesafe",
       url("https://repo.typesafe.com/typesafe/ivy-releases/")
     )(Resolver.ivyStylePatterns),
+    ThisBuild / githubWorkflowPublishTargetBranches := Seq(),
+    ThisBuild / githubWorkflowBuild := Seq(WorkflowStep.Sbt(List("g8Test"), name = Some("Testing template"))),
     // These are duplicated here for Scala Steward
     libraryDependencies ++= Seq(
       "org.typelevel" %% "cats-effect" % "3.0.2",
