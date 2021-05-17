@@ -1,5 +1,5 @@
 ThisBuild / organization := "com.example"
-ThisBuild / scalaVersion := $if(scala3.truthy)$"3.0.0-RC2"$else$"2.13.5"$endif$
+ThisBuild / scalaVersion := $if(scala3.truthy)$"3.0.0"$else$"2.13.5"$endif$
 
 lazy val root = (project in file(".")).settings(
   name := "$name;format="norm"$",
