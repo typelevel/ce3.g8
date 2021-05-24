@@ -13,7 +13,7 @@ lazy val root = (project in file(".")).settings(
     "org.typelevel" %% "cats-effect-std" % "3.1.1"$if(scala3.truthy)$$else$,
     // better monadic for compiler plugin as suggested by documentation
     compilerPlugin("com.olegpy" %% "better-monadic-for" % "0.3.1")$endif$$if(testlib-use-cats-effect-testing-specs2.truthy)$,
-    "org.typelevel" %% "cats-effect-testing-specs2" % "1.1.0" % Test$else$$endif$$if(testlib-use-munit-cats-effect-3.truthy)$,
+    "org.typelevel" %% "cats-effect-testing-specs2" % "1.1.1" % Test$else$$endif$$if(testlib-use-munit-cats-effect-3.truthy)$,
     "org.typelevel" %% "munit-cats-effect-3" % "1.0.3" % Test$else$$endif$
 
   )
