@@ -23,9 +23,9 @@ lazy val root = (project in file("."))
     ThisBuild / githubWorkflowBuild := Seq(WorkflowStep.Sbt(List("g8Test"), name = Some("Testing template"))),
     // These are duplicated here for Scala Steward
     libraryDependencies ++= Seq(
-      "org.typelevel" %% "cats-effect" % "3.1.1",
-      "org.typelevel" %% "cats-effect-kernel" % "3.1.1",
-      "org.typelevel" %% "cats-effect-std" % "3.1.1",
+      "org.typelevel" %% "cats-effect" % "3.2.0",
+      "org.typelevel" %% "cats-effect-kernel" % "3.2.0",
+      "org.typelevel" %% "cats-effect-std" % "3.2.0",
       "org.typelevel" %% "cats-effect-testing-specs2" % "1.1.1" % Test,
       "org.typelevel" %% "munit-cats-effect-3" % "1.0.5" % Test
     )
