@@ -2,7 +2,7 @@ A [Giter8][g8] template for [cats-effect 3](https://github.com/typelevel/cats-ef
 
 Open a console and run the following command to apply this template:
  ```
-sbt -Dsbt.version=1.5.0 new typelevel/ce3.g8
+sbt -Dsbt.version=1.5.5 new typelevel/ce3.g8
  ```
 
 Template license
