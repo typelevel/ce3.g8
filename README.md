@@ -1,5 +1,10 @@
 A [Giter8][g8] template for [cats-effect 3](https://github.com/typelevel/cats-effect/tree/series/3.x)!
 
+Open a console and run the following command to apply this template:
+ ```
+sbt -Dsbt.version=1.5.0 new typelevel/ce3.g8
+ ```
+
 Template license
 ----------------
 Written in 2021 by Jakub Kozłowski <kubukoz@gmail.com>
