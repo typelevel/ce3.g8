@@ -2,6 +2,8 @@ import org.typelevel.sbt.tpolecat.*
 
 ThisBuild / organization := "com.example"
 ThisBuild / scalaVersion := $if(scala3.truthy)$"3.4.0"$else$"2.13.13"$endif$
+// This disables fatal-warnings for local development. To enable it in CI set the `SBT_TPOLECAT_CI` environment variable in your pipeline.
+// See https://github.com/typelevel/sbt-tpolecat/?tab=readme-ov-file#modes
 ThisBuild / tpolecatDefaultOptionsMode := VerboseMode;
 
 lazy val root = (project in file(".")).settings(
