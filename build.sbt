@@ -20,5 +20,5 @@ lazy val root = (project in file("."))
       "org.typelevel" %% "munit-cats-effect" % "2.0.0" % Test
     ),
     // Add sbt plugins here, so that scala steward updates them in the g8 template
-    addSbtPlugin("org.typelevel" % "sbt-tpolecat" % "0.5.1"),
+    addSbtPlugin("org.typelevel" % "sbt-tpolecat" % "0.5.2"),
   )
