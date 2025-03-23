@@ -13,9 +13,9 @@ lazy val root = (project in file("."))
     scriptedLaunchOpts ++= List("-Xms1024m", "-Xmx1024m", "-XX:ReservedCodeCacheSize=128m", "-Xss2m", "-Dfile.encoding=UTF-8"),
     // These are duplicated here for Scala Steward
     libraryDependencies ++= Seq(
-      "org.typelevel" %% "cats-effect" % "3.5.7",
-      "org.typelevel" %% "cats-effect-kernel" % "3.5.7",
-      "org.typelevel" %% "cats-effect-std" % "3.5.7",
+      "org.typelevel" %% "cats-effect" % "3.6.0",
+      "org.typelevel" %% "cats-effect-kernel" % "3.6.0",
+      "org.typelevel" %% "cats-effect-std" % "3.6.0",
       "org.typelevel" %% "cats-effect-testing-specs2" % "1.6.0" % Test,
       "org.typelevel" %% "munit-cats-effect" % "2.0.0" % Test
     ),
